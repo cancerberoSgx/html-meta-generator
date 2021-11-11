@@ -4,6 +4,8 @@ export interface HtmlElementConfig {
   attributes?: { name: string, value: string }[]
   children?: HtmlElementConfig[]
   innerHTML?: string
+  /** by default, if there's no children or innerHTML we use a single-closing tag like `<tag/>`.  If this is true will force the format <tag></tag> always. */
+  forceContent?: boolean
 }
 /**
  * ```
@@ -22,17 +24,24 @@ export interface HtmlElementConfig {
  * TODO: indentLevel
  */
 export function htmlElement(config: HtmlElementConfig): string {
+  const hasContent = config.forceContent || config.innerHTML || (config.children || []).length
   let s = `<${config.name}`
   if (config.attributes) {
     // TODO: escape a.value
     s += ' ' + config.attributes.map(a => `${a.name}="${a.value}"`).join(' ')
   }
-  s += '>'
+  if (hasContent) {
+    s += '>'
+  }
   if (config.children) {
     const children = config.children.map(c => htmlElement(c))
     s += `${children.join('')}`
   }
   s += config.innerHTML || ''
-  s += `</${config.name}>`
+  if (hasContent) {
+    s += `</${config.name}>`
+  } else {
+    s += `/>`
+  }
   return s
 }
