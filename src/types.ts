@@ -10,7 +10,8 @@ export enum Presets {
 // }
 export enum Formats {
   standardHtml = 'standard-tml',
-  schemaOrg = 'schema-org'
+  schemaOrg = 'schema-org',
+  openGraphProtocol='open-graph-protocol',
 }
 /**
  * describes each of the different format standards. instances of this will be SchemaOrg, OpenGraphProtocol, etc.
@@ -24,11 +25,11 @@ export interface Format {
   /** each entry gives a html segment and this method is responsible of joining */
   buildHtml(values: Values): string;
 }
-interface Entry<Value = string> {
+export interface Entry<Value = string> {
   // format: Formats;
   name: string;
   description: string;
-  presets: Presets[];
+  presets?: Presets[];
   buildHtml(value: Value): string;
 }
 export type Values = { [name: string]: any; }

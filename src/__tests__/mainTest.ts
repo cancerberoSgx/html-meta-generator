@@ -11,6 +11,6 @@ describe('main', () => {
         title: 'cool one',
         description: 'wts app fellow'
       }
-    }, '<title>cool one</title><meta name="description" name="description"/>')
+    }, '<title>cool one</title><meta name="description" content="wts app fellow"/><meta property="og:title" content="cool one"/><meta property="og:description" content="wts app fellow"/>')
   })
 })
