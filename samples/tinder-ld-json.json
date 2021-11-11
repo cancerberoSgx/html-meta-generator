@@ -1,0 +1,373 @@
+"@context": "http://schema.org",
+"@type": "WebApplication",
+"name": "Tinder",
+"browserRequirements": "Requires JavaScript. Requires HTML5.",
+"applicationCategory": "Lifestyle",
+"countriesSupported": "en,af,ar,az,bg,bn,bs,ca,cs,da,de,el,en-AU,en-GB,es,es-AR,es-ES,et,eu,fi,fr,fr-CA,gl,he,hi,hr,hu,id,it,ja,ka,kk,km,ko,lt,lv,mk,ms,nb,nl,pl,pt,pt-PT,ro,ru,sk,sl,sr,sv,ta,te,th,tl,tr,uk,vi,zh-Hans,zh-Hant",
+"url": "https://tinder.com/?lang=en",
+"image": "https://tinder.com/static/tinder.png",
+"operatingSystem": "any",
+"sameAs": [
+  "https://www.instagram.com/tinder",
+  "https://www.tiktok.com/@tinder",
+  "https://www.youtube.com/Tinder",
+  "https://twitter.com/Tinder",
+  "https://www.facebook.com/tinder",
+  "https://en.wikipedia.org/wiki/Tinder_(app)",
+  "https://www.linkedin.com/company/tinder-incorporated"
+],
+"inLanguage": [
+  {
+    "@type": "Language",
+    "name": "English",
+    "alternateName": "en",
+    "sameAs": "https://tinder.com"
+  },
+  {
+    "@type": "Language",
+    "name": "Afrikaans",
+    "alternateName": "af",
+    "sameAs": "https://tinder.com/af"
+  },
+  {
+    "@type": "Language",
+    "name": "&rlm;العربية&rlm;",
+    "alternateName": "ar",
+    "sameAs": "https://tinder.com/ar"
+  },
+  {
+    "@type": "Language",
+    "name": "Azeri",
+    "alternateName": "az",
+    "sameAs": "https://tinder.com/az"
+  },
+  {
+    "@type": "Language",
+    "name": "Български",
+    "alternateName": "bg",
+    "sameAs": "https://tinder.com/bg"
+  },
+  {
+    "@type": "Language",
+    "name": "বাংলা",
+    "alternateName": "bn",
+    "sameAs": "https://tinder.com/bn"
+  },
+  {
+    "@type": "Language",
+    "name": "Bosanski",
+    "alternateName": "bs",
+    "sameAs": "https://tinder.com/bs"
+  },
+  {
+    "@type": "Language",
+    "name": "Català",
+    "alternateName": "ca",
+    "sameAs": "https://tinder.com/ca"
+  },
+  {
+    "@type": "Language",
+    "name": "Čeština",
+    "alternateName": "cs",
+    "sameAs": "https://tinder.com/cs"
+  },
+  {
+    "@type": "Language",
+    "name": "Dansk",
+    "alternateName": "da",
+    "sameAs": "https://tinder.com/da"
+  },
+  {
+    "@type": "Language",
+    "name": "Deutsch",
+    "alternateName": "de",
+    "sameAs": "https://tinder.com/de"
+  },
+  {
+    "@type": "Language",
+    "name": "Ελληνικά",
+    "alternateName": "el",
+    "sameAs": "https://tinder.com/el"
+  },
+  {
+    "@type": "Language",
+    "name": "English (Australia)",
+    "alternateName": "en-AU",
+    "sameAs": "https://tinder.com/en-AU"
+  },
+  {
+    "@type": "Language",
+    "name": "English (UK)",
+    "alternateName": "en-GB",
+    "sameAs": "https://tinder.com/en-GB"
+  },
+  {
+    "@type": "Language",
+    "name": "Español",
+    "alternateName": "es",
+    "sameAs": "https://tinder.com/es"
+  },
+  {
+    "@type": "Language",
+    "name": "Español (Argentina)",
+    "alternateName": "es-AR",
+    "sameAs": "https://tinder.com/es-AR"
+  },
+  {
+    "@type": "Language",
+    "name": "Español (España)",
+    "alternateName": "es-ES",
+    "sameAs": "https://tinder.com/es-ES"
+  },
+  {
+    "@type": "Language",
+    "name": "Eesti keel",
+    "alternateName": "et",
+    "sameAs": "https://tinder.com/et"
+  },
+  {
+    "@type": "Language",
+    "name": "Euskera",
+    "alternateName": "eu",
+    "sameAs": "https://tinder.com/eu"
+  },
+  {
+    "@type": "Language",
+    "name": "Suomi",
+    "alternateName": "fi",
+    "sameAs": "https://tinder.com/fi"
+  },
+  {
+    "@type": "Language",
+    "name": "Français (France)",
+    "alternateName": "fr",
+    "sameAs": "https://tinder.com/fr"
+  },
+  {
+    "@type": "Language",
+    "name": "Français (Canada)",
+    "alternateName": "fr-CA",
+    "sameAs": "https://tinder.com/fr-CA"
+  },
+  {
+    "@type": "Language",
+    "name": "Galego",
+    "alternateName": "gl",
+    "sameAs": "https://tinder.com/gl"
+  },
+  {
+    "@type": "Language",
+    "name": "&rlm;עברית&rlm;",
+    "alternateName": "he",
+    "sameAs": "https://tinder.com/he"
+  },
+  {
+    "@type": "Language",
+    "name": "हिन्दी",
+    "alternateName": "hi",
+    "sameAs": "https://tinder.com/hi"
+  },
+  {
+    "@type": "Language",
+    "name": "Hrvatski",
+    "alternateName": "hr",
+    "sameAs": "https://tinder.com/hr"
+  },
+  {
+    "@type": "Language",
+    "name": "Magyar",
+    "alternateName": "hu",
+    "sameAs": "https://tinder.com/hu"
+  },
+  {
+    "@type": "Language",
+    "name": "Bahasa Indonesia",
+    "alternateName": "id",
+    "sameAs": "https://tinder.com/id"
+  },
+  {
+    "@type": "Language",
+    "name": "Italiano",
+    "alternateName": "it",
+    "sameAs": "https://tinder.com/it"
+  },
+  {
+    "@type": "Language",
+    "name": "日本語",
+    "alternateName": "ja",
+    "sameAs": "https://tinder.com/ja"
+  },
+  {
+    "@type": "Language",
+    "name": "ქართული ენა",
+    "alternateName": "ka",
+    "sameAs": "https://tinder.com/ka"
+  },
+  {
+    "@type": "Language",
+    "name": "қазақ тілі",
+    "alternateName": "kk",
+    "sameAs": "https://tinder.com/kk"
+  },
+  {
+    "@type": "Language",
+    "name": "ខ្មែរ",
+    "alternateName": "km",
+    "sameAs": "https://tinder.com/km"
+  },
+  {
+    "@type": "Language",
+    "name": "한국어",
+    "alternateName": "ko",
+    "sameAs": "https://tinder.com/ko"
+  },
+  {
+    "@type": "Language",
+    "name": "Lietuvių",
+    "alternateName": "lt",
+    "sameAs": "https://tinder.com/lt"
+  },
+  {
+    "@type": "Language",
+    "name": "Latviešu",
+    "alternateName": "lv",
+    "sameAs": "https://tinder.com/lv"
+  },
+  {
+    "@type": "Language",
+    "name": "Македонски",
+    "alternateName": "mk",
+    "sameAs": "https://tinder.com/mk"
+  },
+  {
+    "@type": "Language",
+    "name": "Bahasa Melayu",
+    "alternateName": "ms",
+    "sameAs": "https://tinder.com/ms"
+  },
+  {
+    "@type": "Language",
+    "name": "Norsk (bokmål)",
+    "alternateName": "nb",
+    "sameAs": "https://tinder.com/nb"
+  },
+  {
+    "@type": "Language",
+    "name": "Nederlands",
+    "alternateName": "nl",
+    "sameAs": "https://tinder.com/nl"
+  },
+  {
+    "@type": "Language",
+    "name": "Polski",
+    "alternateName": "pl",
+    "sameAs": "https://tinder.com/pl"
+  },
+  {
+    "@type": "Language",
+    "name": "Português (Brasil)",
+    "alternateName": "pt",
+    "sameAs": "https://tinder.com/pt"
+  },
+  {
+    "@type": "Language",
+    "name": "Português (Portugal)",
+    "alternateName": "pt-PT",
+    "sameAs": "https://tinder.com/pt-PT"
+  },
+  {
+    "@type": "Language",
+    "name": "Română",
+    "alternateName": "ro",
+    "sameAs": "https://tinder.com/ro"
+  },
+  {
+    "@type": "Language",
+    "name": "Русский",
+    "alternateName": "ru",
+    "sameAs": "https://tinder.com/ru"
+  },
+  {
+    "@type": "Language",
+    "name": "Slovenčina",
+    "alternateName": "sk",
+    "sameAs": "https://tinder.com/sk"
+  },
+  {
+    "@type": "Language",
+    "name": "Slovenščina",
+    "alternateName": "sl",
+    "sameAs": "https://tinder.com/sl"
+  },
+  {
+    "@type": "Language",
+    "name": "Srpski",
+    "alternateName": "sr",
+    "sameAs": "https://tinder.com/sr"
+  },
+  {
+    "@type": "Language",
+    "name": "Svenska",
+    "alternateName": "sv",
+    "sameAs": "https://tinder.com/sv"
+  },
+  {
+    "@type": "Language",
+    "name": "தமிழ்",
+    "alternateName": "ta",
+    "sameAs": "https://tinder.com/ta"
+  },
+  {
+    "@type": "Language",
+    "name": "తెలుగు",
+    "alternateName": "te",
+    "sameAs": "https://tinder.com/te"
+  },
+  {
+    "@type": "Language",
+    "name": "ภาษาไทย",
+    "alternateName": "th",
+    "sameAs": "https://tinder.com/th"
+  },
+  {
+    "@type": "Language",
+    "name": "Filipino",
+    "alternateName": "tl",
+    "sameAs": "https://tinder.com/tl"
+  },
+  {
+    "@type": "Language",
+    "name": "Türkçe",
+    "alternateName": "tr",
+    "sameAs": "https://tinder.com/tr"
+  },
+  {
+    "@type": "Language",
+    "name": "Українська",
+    "alternateName": "uk",
+    "sameAs": "https://tinder.com/uk"
+  },
+  {
+    "@type": "Language",
+    "name": "Tiếng Việt",
+    "alternateName": "vi",
+    "sameAs": "https://tinder.com/vi"
+  },
+  {
+    "@type": "Language",
+    "name": "中文 (简体)",
+    "alternateName": "zh-Hans",
+    "sameAs": "https://tinder.com/zh-Hans"
+  },
+  {
+    "@type": "Language",
+    "name": "中文 (台灣)",
+    "alternateName": "zh-Hant",
+    "sameAs": "https://tinder.com/zh-Hant"
+  }
+],
+"softwareHelp": {
+  "@type": "CreativeWork",
+  "url": "https://www.help.tinder.com/hc?utm_source=web"
+}
+}
