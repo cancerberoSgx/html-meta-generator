@@ -11,3 +11,6 @@ api
 formatCodeSettings.json
 dist/**/__tests__
 tmp*
+/playground
+/samples
+notes.md

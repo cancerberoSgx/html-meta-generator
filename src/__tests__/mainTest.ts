@@ -1,7 +1,7 @@
-import { mainPrint } from "..";
+import { mainPrint, MainPrintConfig } from "..";
 
 describe('main', () => {
-  function test(config, expected: string) {
+  function test(config: MainPrintConfig, expected: string) {
     const s = mainPrint(config)
     expect(s).toBe(expected)
   }

@@ -3,7 +3,7 @@ export enum Presets {
   title = 'title',
   description = 'description'
 }
-;
+
 // interface Preset {
 //   title: Presets;
 //   description: string;
@@ -23,7 +23,11 @@ export interface Format {
   description: string;
   entries: Entry[];
   /** each entry gives a html segment and this method is responsible of joining */
-  buildHtml(values: Values): string;
+  buildHtml(config: Values): string;
+}
+interface FormatConfig {
+  values: Values
+  entrySeparator?: string
 }
 export interface Entry<Value = string> {
   // format: Formats;

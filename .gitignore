@@ -4,4 +4,5 @@ docs/
 .env
 dist/
 .DS_Store
-/tmp*
+tmp*
+.parcel-cache
