@@ -1,6 +1,7 @@
+import { htmlElement } from "misc-utils-of-mine-generic";
 import { buildHtml } from "../formats";
 import { Format, Formats, Presets } from "../types";
-import { htmlElement, metaName } from "../util";
+import { metaName } from "../util";
 
 export class StandardHtmlFormat implements Format {
   name = Formats.standardHtml;
