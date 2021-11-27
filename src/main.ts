@@ -13,8 +13,8 @@ export interface MainPrintConfig {
 
 export function mainPrint(config: MainPrintConfig) {
   const result = (config.formats || getAllFormats())
-    .map(getFormat)    
-    .map(format => format.buildHtml(config.values))
-    .join(config.formatSeparator||'')
+    .map(getFormat)
+    .map(format => format.buildHtml(config))
+    .join(config.formatSeparator || '')
   return result
 }

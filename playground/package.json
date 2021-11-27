@@ -9,7 +9,7 @@
     "clean": "rm -fr dist/",
     "build-ts": "tsc",
     "build": "npm run clean && npm run build-ts",
-    "start": "parcel src/index.html"
+    "start": "cd ..; npm run build; cd playground; npm run build && parcel src/index.html"
   },
   "author": "Sebastián Gurin",
   "license": "MIT",

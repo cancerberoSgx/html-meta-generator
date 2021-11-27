@@ -2,7 +2,7 @@ import { StandardHtmlFormat } from "../format/standardHtmlFormat"
 
 describe('StandardHtmlFormat', () => {
   function test(values, expected) {
-    const s = new StandardHtmlFormat().buildHtml(values)
+    const s = new StandardHtmlFormat().buildHtml({values})
     expect(s).toBe(expected)
   }
   it('title simple 1', () => {

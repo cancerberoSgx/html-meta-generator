@@ -23,9 +23,9 @@ export interface Format {
   description: string;
   entries: Entry[];
   /** each entry gives a html segment and this method is responsible of joining */
-  buildHtml(config: Values): string;
+  buildHtml(config: FormatConfig): string;
 }
-interface FormatConfig {
+export interface FormatConfig {
   values: Values
   entrySeparator?: string
 }

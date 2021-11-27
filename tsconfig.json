@@ -7,9 +7,9 @@
       "dom"
     ],
     "noImplicitAny": false,
-    "sourceMap": false,
+    "sourceMap": true,
     "moduleResolution": "node",
-    "outDir": "dist"
+    "outDir": "dist",
   },
   "compileOnSave": false,
   "include": [
