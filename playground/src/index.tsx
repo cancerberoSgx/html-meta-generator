@@ -1,35 +1,19 @@
-import { enumKeys } from 'misc-utils-of-mine-generic'
 import * as React from 'react'
 import ReactDOM from 'react-dom'
-import { Format, getAllFormats, getFormat, Presets } from '../../src'
 import { mainPrint } from '../../src/main'
-
-
-interface AppState {
-  presets: {
-    title: string,
-    description: string
-  }
-}
-// interface BaseProps {
-//   state: AppState
-//   setState: (s: AppState)=>void
-// }
-const initialState: AppState = {
-  presets: {
-    title: 'cool product',
-    description: 'solves to ugly problem of you know what',
-  }
-}
-let state: AppState
-let setState: (s: AppState) => void
-const presetNames = enumKeys(Presets)
+import { FormatsSection } from './formats'
+import { PresetsSection } from './presets'
+import { initialState, initState, useAppState } from './state'
+import './styles.css'
 
 const Main: React.FC = () => {
   const [appState, setAppState] = React.useState(initialState)
-  state = appState
-  setState = setAppState
-  // const baseProps: BaseProps = {state, setState}
+  initState(appState, setAppState)
+  return <Body/>
+}
+
+const Body = ()=> {
+  const {state, setState} = useAppState()
   const result = mainPrint({
     values: {
       title: state.presets.title,
@@ -38,41 +22,13 @@ const Main: React.FC = () => {
     entrySeparator: '\n',
     formatSeparator: '\n',
   })
-
-  return <div>
+  return <>
     <PresetsSection />
-    <ul>
-      {getAllFormats().map(getFormat).map(format => <Format key={format.name} format={format} />)}
-    </ul>
+   <FormatsSection/>
     <h4>Results</h4>
     <pre>
       {result}
     </pre>
-  </div>
-}
-
-const Format = (props: { format: Format }) => {
-  return <div>
-    <h4>{props.format.name}</h4>
-    <p>{props.format.description}</p>
-  </div>
-}
-
-const PresetsSection = () => {
-  return <>
-    <h4>Presets</h4>
-    <ul>
-      {presetNames.map(preset => <li key={preset}>
-        <label>{preset}
-          <input placeholder={preset} defaultValue={state.presets[preset]} onChange={e => {
-            state.presets[preset] = e.target.value
-            setState({ ...state })
-            console.log('change preset ' + e.target.value);
-          }}></input>
-        </label>
-      </li>)}
-    </ul>
-    <h4>Formats</h4>
   </>
 }
 

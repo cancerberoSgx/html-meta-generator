@@ -42,4 +42,5 @@ TODO
 
 # TODO
 
- * TODO
+ * scheme json-ld see notes.md
+ * twitter cards json-ld see notes.md

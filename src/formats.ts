@@ -30,6 +30,6 @@ export function buildHtml(config: FormatConfig) {
   return this.entries
     .map(entry => mapEntryValue(entry, config))
     .filter(notFalsy)
-    // .join('SEBA222222')
     .join(config.entrySeparator || '')
 }
+
